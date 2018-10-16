@@ -4,7 +4,7 @@ This package provides two directory iterators to list PHP classes :
 * [`DirectoryClassesIterator`](src/DirectoryClassesIterator.php)
 * [`RecursiveDirectoryClassesIterator`](src/RecursiveDirectoryClassesIterator.php)
 
-The iterator loads the `.php` files using [`include_once()`](http://php.net/manual/function.include-once.php) and uses the [`ReflectionClass`](http://php.net/manual/class.reflectionclass.php) API to detect classes found within the loaded files.
+The iterator loads the `.php` files using [`include_once()`](http://php.net/manual/function.include-once.php) and then the [`ReflectionClass`](http://php.net/manual/class.reflectionclass.php) API to detect classes found within the loaded files.
 
 ## Usage
 ```php
